@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+button {
+  margin: 5px;
+  color: yellow;
+  background-color: black;
+  border: none;
+  width: 20vw;
+  height: 6vh;
+  border-radius: 8px;
+}
+button:hover {
+  color: black;
+  background-color: yellow;
+  font-weight: 600;
+  cursor: pointer;
+}
+h2 {
+  color: rgb(10, 10, 177);
+}
