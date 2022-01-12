@@ -5,14 +5,20 @@ const ButtonClick = () => {
   const [bg, setBg] = useState(color);
   const [name, setName] = useState("Click Me");
   const bgChange = () => {
-    let newBg = "aqua";
-    setBg(newBg);
+    // let newBg = "aqua";
+    setBg("aqua");
     setName("Ouch!!");
+  };
+  const bgBack = () => {
+    setBg("green");
+    setName("Ailaaa!!");
   };
   return (
     <>
       <div style={{ backgroundColor: bg }}>
-        <button onClick={bgChange}>{name}</button>
+        <button onDoubleClick={bgBack} onClick={bgChange}>
+          {name}
+        </button>
       </div>
     </>
   );
